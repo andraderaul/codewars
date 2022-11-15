@@ -1,9 +1,3 @@
-/*
-export const digitalRoot = (n:number):number => {
-  return (n - 1) % 9 + 1
-};
-*/
-
 fn digital_root(n: i64) -> i64 {
     (n - 1) % 9 + 1
 }
