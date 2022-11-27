@@ -1,4 +1,6 @@
-pub fn find_content_children(mut g: Vec<i32>, mut s: Vec<i32>) -> i32 {
+/* https://leetcode.com/problems/assign-cookies/submissions/850236377/ */
+
+fn find_content_children(mut g: Vec<i32>, mut s: Vec<i32>) -> i32 {
     g.sort_by(|a, b| b.cmp(a));
     s.sort_by(|a, b| b.cmp(a));
 
