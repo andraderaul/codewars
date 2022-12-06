@@ -14,7 +14,9 @@ fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
     hash_map.values().cloned().collect()
 }
 
-fn main() {}
+fn main() {
+    println!("{:?}", group_anagrams(["a".to_string()].to_vec()));
+}
 
 #[cfg(test)]
 mod tests {
