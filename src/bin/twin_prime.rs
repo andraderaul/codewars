@@ -1,3 +1,5 @@
+/* https://www.codewars.com/kata/596549c7743cf369b900021b/rust */
+
 fn is_prime(x: usize) -> bool {
     if x == 1 {
         return false;
