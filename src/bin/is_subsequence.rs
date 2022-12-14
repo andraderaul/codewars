@@ -1,3 +1,5 @@
+/* https://leetcode.com/problems/is-subsequence/description/ */
+
 fn is_subsequence(s: String, t: String) -> bool {
     if s.len() > t.len() {
         return false;
@@ -8,8 +10,10 @@ fn is_subsequence(s: String, t: String) -> bool {
     let mut subsequence = 0;
 
     for i in 0..t.len() {
-        if s[subsequence] == t[i] {
-            subsequence += 1;
+        if let Some(x) = s.get(subsequence) {
+            if *x == t[i] {
+                subsequence += 1;
+            }
         }
     }
 
@@ -32,5 +36,6 @@ mod tests {
             is_subsequence("axc".to_string(), "ahbgdc".to_string()),
             false
         );
+        assert_eq!(is_subsequence("".to_string(), "ahbgdc".to_string()), true);
     }
 }
