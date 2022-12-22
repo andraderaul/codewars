@@ -1,3 +1,4 @@
+/* https://leetcode.com/problems/smallest-index-with-equal-value/description/ */
 pub fn smallest_equal(nums: Vec<i32>) -> i32 {
     let mut out: i32 = -1;
 
