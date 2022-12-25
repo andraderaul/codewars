@@ -1,3 +1,5 @@
+/* https://leetcode.com/problems/triangle/description/ */
+
 pub fn minimum_total(triangle: Vec<Vec<i32>>) -> i32 {
     let mut memo = triangle[triangle.len() - 1].clone();
 
