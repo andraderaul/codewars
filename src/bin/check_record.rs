@@ -1,3 +1,5 @@
+/* https://leetcode.com/problems/student-attendance-record-i/description/ */
+
 pub fn check_record(s: String) -> bool {
     s.find("A") == s.rfind("A") && s.find("LLL") == None
 }
