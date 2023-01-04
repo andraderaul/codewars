@@ -1,3 +1,5 @@
+/* https://www.codewars.com/kata/5a63948acadebff56f000018/train/rust */
+
 fn max_product(mut lst: Vec<i32>, n_largest_elements: i32) -> i32 {
     lst.sort_by(|a, b| b.cmp(a));
     lst.iter().take(n_largest_elements as usize).product()
