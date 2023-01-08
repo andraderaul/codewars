@@ -15,6 +15,8 @@ pub fn fizz_buzz(n: i32) -> Vec<String> {
     answer
 }
 
+fn main() {}
+
 #[cfg(test)]
 mod tests {
     use super::fizz_buzz;

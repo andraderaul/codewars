@@ -1,6 +1,6 @@
 /* https://leetcode.com/problems/robot-return-to-origin/description/ */
 
-fn judge_circle(moves: String) -> bool {
+pub fn judge_circle(moves: String) -> bool {
     let (x, y) = moves.chars().fold((0, 0), |(x, y), c| match c {
         'U' => (x, y + 1),
         'D' => (x, y - 1),

@@ -13,6 +13,8 @@ pub fn length_of_last_word(s: String) -> i32 {
     }
 }
 
+fn main() {}
+
 #[cfg(test)]
 mod tests {
     use super::length_of_last_word;

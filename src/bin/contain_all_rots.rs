@@ -1,10 +1,12 @@
 /* https://www.codewars.com/kata/5700c9acc1555755be00027e/train/rust */
 
-fn contain_all_rots(strng: &str, arr: Vec<&str>) -> bool {
+pub fn contain_all_rots(strng: &str, arr: Vec<&str>) -> bool {
     (0..strng.len())
         .map(|index| strng[index..].to_owned() + &strng[..index])
         .all(|x| arr.contains(&x.as_str()))
 }
+
+fn main() {}
 
 #[cfg(test)]
 mod tests {

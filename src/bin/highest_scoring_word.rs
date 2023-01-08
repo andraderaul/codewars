@@ -1,6 +1,6 @@
 /* https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/train/rust */
 
-fn high(input: &str) -> &str {
+pub fn high(input: &str) -> &str {
     input
         .split_ascii_whitespace()
         .rev()

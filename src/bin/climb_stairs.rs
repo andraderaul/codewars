@@ -48,6 +48,8 @@ pub fn climb_stairs(n: i32) -> i32 {
     climb_stairs_rec(n, &mut memo)
 }
 
+fn main() {}
+
 #[cfg(test)]
 mod tests {
     use super::climb_stairs;

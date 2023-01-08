@@ -12,6 +12,8 @@ pub fn smallest_equal(nums: Vec<i32>) -> i32 {
     out
 }
 
+fn main() {}
+
 #[cfg(test)]
 mod tests {
     use super::smallest_equal;

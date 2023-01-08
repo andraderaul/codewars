@@ -1,6 +1,6 @@
 /* https://leetcode.com/problems/is-subsequence/description/ */
 
-fn is_subsequence(s: String, t: String) -> bool {
+pub fn is_subsequence(s: String, t: String) -> bool {
     if s.len() > t.len() {
         return false;
     }

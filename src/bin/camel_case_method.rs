@@ -1,6 +1,6 @@
 /* https://www.codewars.com/kata/587731fda577b3d1b0001196 */
 
-fn camel_case(str: &str) -> String {
+pub fn camel_case(str: &str) -> String {
     str.split_whitespace()
         .map(|s| [&s[..1].to_uppercase(), &s[1..]].join(""))
         .collect()

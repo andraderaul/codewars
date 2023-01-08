@@ -1,6 +1,6 @@
 /* https://leetcode.com/problems/fibonacci-number/description/ */
 
-fn fib_memo(n: i32) -> i32 {
+pub fn fib_memo(n: i32) -> i32 {
     let mut memo: Vec<i32> = vec![0; n as usize + 2];
     memo[0] = 0;
     memo[1] = 1;
@@ -12,7 +12,7 @@ fn fib_memo(n: i32) -> i32 {
     memo[n as usize]
 }
 
-fn fib(n: i32) -> i32 {
+pub fn fib(n: i32) -> i32 {
     if n == 0 {
         return 0;
     }

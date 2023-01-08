@@ -1,6 +1,6 @@
 /* https://www.codewars.com/kata/577a98a6ae28071780000989/train/rust */
 
-fn minimum(arr: &[i32]) -> i32 {
+pub fn minimum(arr: &[i32]) -> i32 {
     let mut min = i32::MAX;
     for a in arr {
         if a < &min {
@@ -11,7 +11,7 @@ fn minimum(arr: &[i32]) -> i32 {
     min
 }
 
-fn maximum(arr: &[i32]) -> i32 {
+pub fn maximum(arr: &[i32]) -> i32 {
     let mut max = i32::MIN;
     for a in arr {
         if a > &max {

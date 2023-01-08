@@ -8,10 +8,10 @@
  * unsafe fn guess(num: i32) -> i32 {}
  */
 
-struct Solution {}
+pub struct Solution {}
 
 impl Solution {
-    unsafe fn guessNumber(n: i32) -> i32 {
+    pub unsafe fn guess_number(n: i32) -> i32 {
         let (mut low, mut high) = (1, n);
         loop {
             let mid = low + (high - low) / 2;
@@ -22,6 +22,11 @@ impl Solution {
             }
         }
     }
+}
+
+fn guess(mid: i32) -> i32 {
+    println!("{}", mid);
+    todo!()
 }
 
 fn main() {}

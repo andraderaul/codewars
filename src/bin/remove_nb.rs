@@ -1,6 +1,6 @@
 /* https://www.codewars.com/kata/5547cc7dcad755e480000004 */
 
-fn remove_nb_2(m: i32) -> Vec<(i32, i32)> {
+pub fn remove_nb_2(m: i32) -> Vec<(i32, i32)> {
     let n: i64 = m as i64;
     let sum: i64 = n * (n + 1) / 2;
     let mut result = vec![];
@@ -15,7 +15,7 @@ fn remove_nb_2(m: i32) -> Vec<(i32, i32)> {
     result
 }
 
-fn remove_nb(m: i32) -> Vec<(i32, i32)> {
+pub fn remove_nb(m: i32) -> Vec<(i32, i32)> {
     fn binary_search(nums: &Vec<i32>, i: i64, sum: i64) -> i64 {
         let mut low: i64 = 0;
         let mut high: i64 = (nums.len() - 1) as i64;
@@ -52,6 +52,8 @@ fn remove_nb(m: i32) -> Vec<(i32, i32)> {
 
     ans
 }
+
+fn main() {}
 
 #[cfg(test)]
 mod tests {

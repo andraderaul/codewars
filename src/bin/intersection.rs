@@ -2,7 +2,7 @@
 
 use std::collections::HashMap;
 
-fn intersection(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
+pub fn intersection(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
     let mut hash_map = HashMap::new();
     let mut ans = vec![];
 

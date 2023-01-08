@@ -1,6 +1,6 @@
 /* https://leetcode.com/problems/n-th-tribonacci-number/description/ */
 
-fn tribonacci(n: i32) -> i32 {
+pub fn tribonacci(n: i32) -> i32 {
     let mut memo = vec![0; n as usize + 3];
     memo[0] = 0;
     memo[1] = 1;
