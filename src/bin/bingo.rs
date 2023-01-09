@@ -1,3 +1,5 @@
+/* https://www.codewars.com/kata/57f625992f4d53c24200070e/train/rust */
+
 pub fn bingo<S: AsRef<str>>(ticket: &[(S, u8)], win: usize) -> &'static str {
     match ticket
         .iter()
