@@ -1,6 +1,6 @@
-def perfect_square_2(square):
-    l = len(square.split("\n"))
-    return all("." * l == x for x in square.split("\n"))
+def perfect_square_2(square: str):
+    l = len(square.splitlines())
+    return all("." * l == x for x in square.splitlines())
 
 
 def perfect_square(square: str) -> bool:
@@ -18,6 +18,3 @@ def perfect_square(square: str) -> bool:
             return False
 
     return lines_len == count
-
-
-perfect_square('...\n.;..\n...')

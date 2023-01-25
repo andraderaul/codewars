@@ -1,7 +1,7 @@
 from typing import List
 
 
-def move_zeros_2(array):
+def move_zeros_2(array: List[int]):
     return [x for x in array if x] + [0] * array.count(0)
 
 

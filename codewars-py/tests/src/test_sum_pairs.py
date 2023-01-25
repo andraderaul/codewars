@@ -1,7 +1,5 @@
 from codewars_py.src.sum_pairs import sum_pairs
 
-import pytest
-
 
 def assert_equals(expected, real, msg):
     assert expected == real, msg

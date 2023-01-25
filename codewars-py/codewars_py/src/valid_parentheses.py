@@ -1,7 +1,7 @@
 # https://www.codewars.com/kata/52774a314c2333f0a7000688/train/python/
 
 
-def valid_parentheses(string):
+def valid_parentheses(string: str):
     cnt = 0
     for char in string:
         if char == '(':

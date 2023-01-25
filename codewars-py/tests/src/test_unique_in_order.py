@@ -1,7 +1,5 @@
 from codewars_py.src.unique_in_order import unique_in_order
 
-import pytest
-
 
 def assert_equals(expected, real):
     assert expected == real
