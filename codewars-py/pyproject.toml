@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "codewars_py"
+version = "0.1.0"
+description = ""
+authors = ["Raul Andrade <theandraderaul@gmail.com>"]
+readme = "README.md"
+packages = [{include = "codewars_py"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+ipython = "^8.4.0"
+black = "^22.3.0"
+mypy = "^0.961"
+pytest-env = "^0.6.2"
+flake8="^4.0.1"
+
+# custom dependencies
+codewars_test = { git = "https://github.com/codewars/python-test-framework.git#egg=codewars_test" , tag ="v0.2.1" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
