@@ -5,7 +5,7 @@ def assert_equals(expected, real):
     assert expected == real
 
 
-def basic_tests():
+def test_basic_tests():
     assert_equals(
         disemvowel("This website is for losers LOL!"), "Ths wbst s fr lsrs LL!"
     )
