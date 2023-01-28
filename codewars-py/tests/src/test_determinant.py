@@ -1,8 +1,6 @@
 from codewars_py.src.determinant import determinant
 
-
-def assert_equals(expected, real, msg):
-    assert expected == real, msg
+from tests.src.utils import assert_equals
 
 
 def test_basic_tests():

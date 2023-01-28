@@ -1,8 +1,7 @@
 from codewars_py.src.sum_pairs import sum_pairs
 
 
-def assert_equals(expected, real, msg):
-    assert expected == real, msg
+from tests.src.utils import assert_equals
 
 
 def test_sample_tests():

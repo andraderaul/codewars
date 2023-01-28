@@ -1,8 +1,6 @@
 from codewars_py.src.solve_runes import solve_runes
 
-
-def assert_equals(expected, real, msg):
-    assert expected == real, msg
+from tests.src.utils import assert_equals
 
 
 def test_sample_tests():

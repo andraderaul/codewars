@@ -1,8 +1,6 @@
 from codewars_py.src.disemvowel import disemvowel
 
-
-def assert_equals(expected, real):
-    assert expected == real
+from tests.src.utils import assert_equals
 
 
 def test_basic_tests():

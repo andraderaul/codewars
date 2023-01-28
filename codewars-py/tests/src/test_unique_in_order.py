@@ -1,8 +1,6 @@
 from codewars_py.src.unique_in_order import unique_in_order
 
-
-def assert_equals(expected, real):
-    assert expected == real
+from tests.src.utils import assert_equals
 
 
 def test_should_work_with_empty_sequence():
